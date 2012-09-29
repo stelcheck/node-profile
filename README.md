@@ -13,6 +13,13 @@ Via [npm](http://github.com/isaacs/npm):
 
     $ npm install profile
 
+## The untold story: d8
+pushd ' + process.env.NVM_DIR + '/src/node-' + process.version + '/deps/v8
+console.log(process.env.NVM_DIR + '/src/node-' + process.version + '/deps/v8/SConstruct:845 change to 'LIBS': ['readline', 'termcap'] on CentOS
+run scons mode=debug arch=x64 console=readline d8
+ln -s d8_g d8
+popd
+
 ## Usage
 ### Output to stdout
 `> nodeprofile yourapp.js`
