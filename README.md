@@ -3,6 +3,10 @@
 A script that makes profiling node.js apps a little easier.
 Compatible with node v0.6.x
 
+This version has been modified to take advantage of NVM-based installs.
+It also includes some information in regards to missing pieces of the puzzle,
+such as d8 compilation and so on (stelcheck).
+
 ## Installation
 
 Via [npm](http://github.com/isaacs/npm):
@@ -21,7 +25,7 @@ This is useful if you want to profile certain areas of your code using [bnoordhu
 
 ## "Dependencies"
 * python
-* [SCONS](http://www.scons.org/) (used to build the V8 debugger on first use) 
+* [SCONS](http://www.scons.org/) (used to build the V8 debugger on first use)
 * That the `locate` command can find a copy of `linux-tick-processor` (or `mac-tick-processor` on OS X). This is bundled with node.js.
 
 ## Pre-configuration
